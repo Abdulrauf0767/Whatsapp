@@ -588,7 +588,7 @@ const ChatBox = ({ selectedChat, onBack, isMobile }) => {
           </div>
         ) : (
           <div className='w-full flex items-center justify-between bg-[#f0f2f5] rounded-lg px-3 py-2'>
-            <div className='flex items-center gap-x-3 w-[25%] '>
+            <div className='flex items-center gap-x-3 w-[10%] '>
               <button 
                 onClick={toggleEmojiPicker}
                 className='text-gray-500 hover:text-gray-700 '
@@ -654,7 +654,7 @@ const ChatBox = ({ selectedChat, onBack, isMobile }) => {
                 onChange={(e) => setMessage(e.target.value)}
                 onKeyPress={handleKeyPress}
                 placeholder='Type a message' 
-                className='w-[50%] bg-transparent outline-none text-sm px-4 py-2 mx-2 rounded-lg' 
+                className='w-[70%] bg-transparent outline-none text-sm px-4 py-2 mx-2 rounded-lg' 
               />
             )}
             
@@ -665,7 +665,7 @@ const ChatBox = ({ selectedChat, onBack, isMobile }) => {
                 </svg>
               </button>
             ) : (
-              <button onClick={startRecording} className={`text-gray-500 w-[10%] hover:text-gray-700 ${isRecording ? 'text-red-500' : ''}`}>
+              <button onClick={startRecording} className={`text-gray-500 w-[5%] hover:text-gray-700 ${isRecording ? 'text-red-500' : ''}`}>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M12 18.75a6 6 0 0 0 6-6v-1.5m-6 7.5a6 6 0 0 1-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 0 1-3-3V4.5a3 3 0 1 1 6 0v8.25a3 3 0 0 1-3 3Z" />
                 </svg>
